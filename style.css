@@ -1,0 +1,267 @@
+body {
+    background-color: rgba(249, 248, 244, 255);
+    padding: 0.19vh 5%;
+    margin: 0;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.border {
+    border: 2px solid rgba(241, 233, 230, 255);
+}
+
+header,
+main,
+footer {
+    background-color: white;
+    padding: 0.55vh 0;
+}
+
+header>div,
+nav,
+main>div,
+footer>div {
+    margin: 0 0.31vw 0.55vh 0.31vw;
+}
+
+.pink {
+    background-color: rgba(229, 238, 237, 255);
+}
+
+.flex-row {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.padding {
+    padding: 2.78vh 2.08vw;
+}
+
+.gap {
+    gap: 1.39vh;
+}
+
+#admin {
+    text-align: left;
+    background-color: rgba(241, 222, 215, 255);
+    padding: 0.5vh 0.62vw;
+}
+
+nav a {
+    margin: auto;
+}
+
+nav img {
+    margin-left: 0.62vw;
+    max-width: 25%;
+    height: auto;
+}
+
+#call h1 {
+    margin-bottom: 3.52vh;
+}
+
+#call p {
+    margin-bottom: 1.39vh;
+    padding: 0 26.04vw;
+}
+
+.button {
+    background-color: white;
+    box-shadow: 2px 2px 10px grey;
+    padding: 10px;
+    min-width: 4.17vw;
+    text-align: center;
+}
+
+#compelling h1 {
+    margin-bottom: 2.13vh;
+}
+
+#compelling p {
+    padding: 0 20vw;
+}
+
+#about {
+    gap: 1.3vw;
+}
+
+#about img {
+    max-width: 50%;
+    height: auto;
+    margin-left: auto;
+}
+
+#about-text {
+    margin: auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+#service {
+    gap: 1.2vh;
+    padding: 2.78vh 0;
+}
+
+#boxes {
+    width: 100%;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+#boxes figure {
+    min-width: 20%;
+    height: auto;
+}
+
+#boxes img {
+    box-shadow: 2px 2px 10px rgba(241, 233, 230, 255);
+    width: 100%;
+    height: auto;
+}
+
+#boxes figcaption {
+    width: 100%;
+}
+
+#social {
+    gap: 1.85vh;
+}
+
+#featured {
+    background-color: rgba(244, 220, 216, 255);
+}
+
+#banners {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: center;
+    -webkit-align-items: center;
+    gap: 0.73vw;
+}
+
+#banners img {
+    box-shadow: 2px 2px 10px rgba(241, 233, 230, 255);
+    min-width: 9.9vw;
+    height: auto;
+}
+
+footer>div {
+    background-color: rgba(237, 218, 188, 255);
+}
+
+@media (max-width: 1789px) {
+    #boxes {
+        justify-content: center;
+    }
+
+    #boxes figure {
+        min-width: 29%;
+    }
+}
+
+@media (max-width: 1649px) {
+    #compelling p {
+        padding: 0;
+    }
+}
+
+@media (max-width: 949px) {
+    body {
+        padding: 0.19vh 1%;
+    }
+}
+
+@media (max-width: 749px) {
+    #boxes figure {
+        min-width: 15%;
+    }
+
+    #call p {
+        padding: 0 20vw;
+    }
+
+    #banners {
+        justify-content: center;
+        -webkit-justify-content: center;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 699px) {
+    body {
+        padding: 0.19vh 0;
+    }
+}
+
+@media (max-width: 499px) {
+    #about {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        gap: 1.39vh;
+    }
+
+    #about img {
+        margin: 0;
+    }
+
+    #about-text {
+        margin: 0;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    #call p {
+        padding: 0;
+    }
+}
+
+@media (max-width: 449px) {
+    footer>div {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        gap: 1.39vh;
+    }
+}
